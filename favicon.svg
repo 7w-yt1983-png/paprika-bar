@@ -1,14 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF4500"/>
-      <stop offset="50%" style="stop-color:#E8722A"/>
-      <stop offset="100%" style="stop-color:#C75B1A"/>
+    <linearGradient id="pepper" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF3D00"/>
+      <stop offset="40%" style="stop-color:#E8350A"/>
+      <stop offset="100%" style="stop-color:#B22A08"/>
     </linearGradient>
+    <radialGradient id="shine" cx="35%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:rgba(255,255,255,0.3)"/>
+      <stop offset="100%" style="stop-color:rgba(255,255,255,0)"/>
+    </radialGradient>
   </defs>
-  <path d="M32 8 C28 8, 22 12, 20 20 C17 32, 18 44, 24 52 C27 56, 30 58, 32 58 C34 58, 37 56, 40 52 C46 44, 47 32, 44 20 C42 12, 36 8, 32 8Z" fill="url(#g)"/>
-  <path d="M32 8 C30 4, 28 2, 26 2 C24 2, 22 4, 24 8 C25 10, 28 10, 32 8Z" fill="#2D8B2D"/>
-  <path d="M32 8 C34 4, 36 2, 38 2 C40 2, 42 4, 40 8 C39 10, 36 10, 32 8Z" fill="#3AA53A"/>
-  <path d="M32 6 C32 2, 31 0, 30 0 C29 0, 28 2, 30 6" fill="#1F6B1F"/>
-  <ellipse cx="28" cy="22" rx="3" ry="6" fill="rgba(255,255,255,0.15)" transform="rotate(-15 28 22)"/>
+  <!-- stem -->
+  <path d="M60 28 C58 20, 54 14, 50 12 C48 11, 46 13, 48 16 C50 20, 55 24, 60 28Z" fill="#2E7D32"/>
+  <path d="M68 28 C70 22, 74 16, 78 14 C80 13, 82 15, 80 18 C78 22, 73 26, 68 28Z" fill="#388E3C"/>
+  <path d="M64 26 C64 18, 63 10, 62 6 C61 4, 60 4, 60 6 C60 10, 61 18, 62 26Z" fill="#1B5E20"/>
+  <!-- calyx (green cap) -->
+  <ellipse cx="64" cy="30" rx="14" ry="5" fill="#2E7D32"/>
+  <!-- pepper body - wide and curved -->
+  <path d="M50 32 C42 40, 38 54, 40 68 C42 80, 48 92, 58 100 C62 104, 66 104, 70 100 C80 92, 86 80, 88 68 C90 54, 86 40, 78 32 C74 28, 54 28, 50 32Z" fill="url(#pepper)"/>
+  <!-- shine -->
+  <path d="M50 32 C42 40, 38 54, 40 68 C42 80, 48 92, 58 100 C62 104, 66 104, 70 100 C80 92, 86 80, 88 68 C90 54, 86 40, 78 32 C74 28, 54 28, 50 32Z" fill="url(#shine)"/>
+  <!-- wrinkle lines -->
+  <path d="M56 38 C54 50, 52 64, 54 78" stroke="rgba(0,0,0,0.08)" stroke-width="1.5" fill="none"/>
+  <path d="M72 38 C74 50, 76 64, 74 78" stroke="rgba(0,0,0,0.08)" stroke-width="1.5" fill="none"/>
+  <!-- tip curve -->
+  <path d="M64 96 C62 104, 60 110, 56 114 C54 116, 52 114, 54 112 C58 108, 62 100, 64 96Z" fill="#B22A08"/>
 </svg>

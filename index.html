@@ -700,15 +700,7 @@
             display: flex; align-items: center; justify-content: center;
             position: relative;
         }
-        .map-link {
-            display: flex; flex-direction: column; align-items: center; gap: 16px;
-            text-decoration: none; color: var(--warm-gray);
-            padding: 40px;
-            transition: color 0.3s;
-        }
-        .map-link span { font-size: 0.95rem; font-weight: 500; letter-spacing: 1px; }
-        .map-link:hover { color: var(--orange-light); }
-        .map-link:hover svg { stroke: var(--orange-light); }
+        .map-frame iframe { width: 100%; height: 100%; min-height: 450px; border: 0; border-radius: 24px; filter: grayscale(0.2) brightness(0.9); }
 
         /* ===== CTA BANNER ===== */
         .cta-banner {
@@ -1294,7 +1286,7 @@
                     <div class="cc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
                     <div>
                         <div class="cc-label">Адрес</div>
-                        <div class="cc-value"><a href="https://yandex.ru/profile/193030245216?lang=ru" target="_blank" data-hover>Посмотреть на Яндекс.Картах</a></div>
+                        <div class="cc-value">Степаньковское ш., 35А, п. г. т. Правдинский</div>
                     </div>
                 </div>
                 <div class="contact-card stagger-child" style="--i:1">
@@ -1321,10 +1313,7 @@
             </div>
         </div>
         <div class="map-frame reveal-right">
-            <a href="https://yandex.ru/profile/193030245216?lang=ru" target="_blank" class="map-link" data-hover>
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Открыть на Яндекс.Картах</span>
-            </a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.391638%2C55.508571&z=17&pt=37.391638%2C55.508571%2Cpm2rdm&lang=ru" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
